@@ -108,11 +108,11 @@ dropout_par = 0.05 # unused right now
 data_filename = 'data.pk'
 if not os.path.isfile(data_filename):
     # only for linux, includes google colab
-    get_ipython().system('wget -d https://github.com/attilalr/fully-conv-network-1d-coal/raw/main/data.pk')
+    os.system('wget -d https://github.com/attilalr/fully-conv-network-1d-coal/raw/main/data.pk')
 
-
+# if it still missing, raise error
 if not os.path.isfile(data_filename):
-    print (f'Data file {data_filename} is missing.')
+    raise Exception('Data file is missing.')
 
 # the initial dataset contains 3 columns, we want the first two (resistivity and nat. gamma)
 # the last col is the measured depth, to use all columns: include_i = np.array([0, 1, 2])
