@@ -1,6 +1,7 @@
 # fully-conv-network-1d-coal
 
 This script is part of a study to detect and classify coal layers using well log data using conv 1d.
+Preprint in https://www.researchgate.net/publication/361904359_Lithology_identification_using_Semantic_Segmentation_for_Well_log_data
 
 
 ![image](https://user-images.githubusercontent.com/9744889/173883329-c913a401-182c-4449-8a2c-ee58c65283e5.png)
